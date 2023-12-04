@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+<style>
+    .membership-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+     
+      justify-content: center; /* Center vertically */
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .subscription-option {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    button {
+        background-image: url('https://i.gifer.com/V5M.gif');
+      color: #fff;
+      justify-content: center;
+      background-size: cover;
+  background-position: center;  
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    button:hover {
+      background-image: url('https://64.media.tumblr.com/198d1496f614aed27c0099c1a192a480/25682ea62ad023e0-2c/s500x750/2eadbad0c28f84e91b695ae046529201d6578b31.gif');
+      justify-content: center;
+      background-size: cover;
+  background-position: center;
+ 
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo1">
+                <img src="logo.png">
+            <div class="logo-name"><span>Yon</span>ko</div>
+        </div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li><a href="newfeature.html"><i class='bx bxs-dashboard'></i>New & Featured</a></li>
+            <li><a href="products.html"><i class='bx bx-store-alt'></i>Products</a></li>
+            <li ><a href="customize.html"><i class='bx bx-analyse'></i>Customize</a></li>
+            <li><a href="contactus.html"><i class='bx bx-message-square-dots'></i>Contact Us</a></li>
+            <li class="active"><a href="membership.html"><i class='bx bx-group'></i>Membership</a></li>
+            <li><a href="aboutus.html"><i class='bx bx-cog'></i>Yonko's</a></li><br>
+            <hr class="styled-hr"><br>
+                <div class="vertical-menu">
+                    <a href="#" class="active">Sales(100)</a>
+                    <li><a href="#">Shoes</a>
+                    <li><a href="#">Top and T-shirts</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Trousers & Tights</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sports  wear</a></li>
+                    <li><a href="#">Skirt & Dresses</a></li>
+                    <li><a href="#">Socks</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Gender</a>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Unisex</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Kid</a>
+                    <li><a href="#">boy</a></li>
+                    <li><a href="#">girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">New Released</a>
+                    <li><a href="#">Men & Boy</a></li>
+                    <li><a href="#">Women & Girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Shop By Price</a>
+                    <li><a href="#">Under ₱ 3,000</a></li>
+                    <li><a href="#">₱ 3,000 - ₱ 6,000</a></li>
+                    <li><a href="#">₱ 6,000 - ₱ 12,000</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Colour</a>
+                    <div class="circle-container">
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                    </div><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Sports</a>
+                    <li><a href="#">LifeStyle</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Basketball</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Best For</a>
+                    <li><a href="#">Wet Weather Condtion</a></li>
+                    <li><a href="#">Winter Wear</a></li><br>
+            </div>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="https://w7.pngwing.com/pngs/973/860/png-transparent-anonym-avatar-default-head-person-unknown-user-user-pictures-icon-thumbnail.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="bottom-data">
+            <div class="membership-container">
+                <h2>Planner Membership</h2>
+              
+                <div class="subscription-option">
+                  <div class="column">
+                    <h2>1 Month Subscription</h2>
+                    <p>Unlock new apparel collections every month.</p>
+                  </div>
+                  <div class="column">
+                    <h2>Benefits:</h2>
+                    <ul>
+                      <li>Early access to sales</li>
+                      <li>Exclusive members-only discounts</li>
+                      <li>Personalized styling recommendations</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <button onclick="subscribe(1)">Subscribe</button>
+                  </div>
+                </div>
+              
+                <div class="subscription-option">
+                  <div class="column">
+                    <h2>5 Months Subscription</h2>
+                    <p>Enjoy a variety of outfits for the next five months.</p>
+                  </div>
+                  <div class="column">
+                    <h2>Benefits:</h2>
+                    <ul>
+                      <li>Free shipping on all orders</li>
+                      <li>Priority customer support</li>
+                      <li>Access to limited edition items</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <button onclick="subscribe(5)">Subscribe</button>
+                  </div>
+                </div>
+              
+                <div class="subscription-option">
+                  <div class="column">
+                    <h2>1 Year Subscription</h2>
+                    <p>A year-long wardrobe refresh with exclusive perks.</p>
+                  </div>
+                  <div class="column">
+                    <h2>Benefits:</h2>
+                    <ul>
+                      <li>Monthly surprise gifts</li>
+                      <li>VIP invitations to store events</li>
+                      <li>Extended return policy</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <button onclick="subscribe(12)">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="footer2">
+                <div class="waves">
+                  <div class="wave" id="wave1"></div>
+                  <div class="wave" id="wave2"></div>
+                  <div class="wave" id="wave3"></div>
+                  <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icon">
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="aboutus.html">Yonko's</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">New & Featured</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Customize</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Membership</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Download App</a></li>
+                </ul>
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                    <a href="#">Yonko</a>.
+                </p>
+              </footer>
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

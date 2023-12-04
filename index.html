@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  
+
+    
+
+    
+    </script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo1">
+                <img src="logo.png" alt="Logo">
+                <div class="logo-name"><span>Yon</span>ko</div>
+            </div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="index.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li><a href="newfeature.html"><i class='bx bxs-dashboard'></i>New & Featured</a></li>
+            <li><a href="products.html"><i class='bx bx-store-alt'></i>Products</a></li>
+            <li ><a href="customize.html"><i class='bx bx-analyse'></i>Customize</a></li>
+            <li><a href="contactus.html"><i class='bx bx-message-square-dots'></i>Contact Us</a></li>
+            <li><a href="membership.html"><i class='bx bx-group'></i>Membership</a></li>
+            <li><a href="aboutus.html"><i class='bx bx-cog'></i>Yonko's</a></li><br>
+            <hr class="styled-hr"><br>
+                <div class="vertical-menu">
+                    <a href="#" class="active"><font color="orange">Sales(100)</font></a></li>
+                    <li><a href="#">Shoes</a>
+                    <li><a href="#">Top and T-shirts</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Trousers & Tights</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sports  wear</a></li>
+                    <li><a href="#">Skirt & Dresses</a></li>
+                    <li><a href="#">Socks</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange">Gender</font></a>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Unisex</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange">Kid</font></a>
+                    <li><a href="#">boy</a></li>
+                    <li><a href="#">girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange">>New Released</font></a>
+                    <li><a href="#">Men & Boy</a></li>
+                    <li><a href="#">Women & Girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange">Shop By Price</font></a>
+                    <li><a href="#">Under ₱ 3,000</a></li>
+                    <li><a href="#">₱ 3,000 - ₱ 6,000</a></li>
+                    <li><a href="#">₱ 6,000 - ₱ 12,000</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange">Colour</font></a>
+                    <div class="circle-container">
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                    </div><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange">Sports</font></a>
+                    <li><a href="#">LifeStyle</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Basketball</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active"><font color="orange"></font>Best For</a>
+                    <li><a href="#">Wet Weather Condtion</a></li>
+                    <li><a href="#">Winter Wear</a></li><br>
+            </div>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-cart'></i>  
+            </a>
+            <a href="#" class="profile">
+                <img src="https://w7.pngwing.com/pngs/973/860/png-transparent-anonym-avatar-default-head-person-unknown-user-user-pictures-icon-thumbnail.png">
+            </a>
+            <div id="greeting"></div>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+
+            <div class="container">
+
+                <video autoplay loop muted plays-inline class="background-clip">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+        
+                <div class="content1">
+                    <p>#NEW WINTER COLLECTION 2023</p>
+                    <h1>New Arrivals</h1>
+                    <a href="#">SHOP NOW!</a>
+                </div>
+            </div>
+
+            <div class="page">
+           
+                <h2>50% OFF SALE</h2>
+          
+        </div>
+
+            <ul class="insights">
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/a2/8b/c4/a28bc44f2f9c896c4698c3dadc03d867.jpg" alt="Product 1">
+                    <div class="bottom-data">
+                        <ul>
+                        <h2>Yonko's green drip kid size</h2><br>
+                        <p>ratings:</p><div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><br>
+                        <button class="icon-button">&#9825; Add Favorites</button>
+                        <a href="products.html"><button class="icon-button">&#128722; Add to Cart</button></a>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <img src="https://ae01.alicdn.com/kf/H22e49653ee9e4314aa24fd252bcf028cD/oversized-two-piece-set-top-and-pants-2-pieces-set-korean-fashion-fall-women-s-clothing.jpg" alt="Product 2">
+                    <div class="bottom-data">
+                        <ul>
+                        <h2>Yonko's Cool Black Sweater</h2><br>
+                        <p>ratings:</p><div class="rating">&#9733;&#9733;&#9733;&#9733;<span style="color: #ecf0f1;">&#9734;</span></div><br>
+                        <button class="icon-button">&#9825; Add Favorites</button>
+                        <a href="products.html"><button class="icon-button">&#128722; Add to Cart</button></a>
+                    </ul>
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <img src="https://www.mateadesigns.com.au/cdn/shop/products/Matea_Designs_Womens_Fashion_Black_Classic_Fur_Jacket_6_800x.jpg?v=1659919521" alt="Product 3">
+                    <div class="bottom-data">
+                        <ul>
+                        <h2>Autumn Winter Faux <br>Fur Coat Jackets</h2><br>
+                        <p>ratings:</p><div class="rating">&#9733;&#9733;&#9733;&#9733;<span style="color: #ecf0f1;">&#9734;</span></div><br>
+                        <button class="icon-button">&#9825; Add Favorites</button>
+                        <a href="products.html"><button class="icon-button">&#128722; Add to Cart</button></a>
+                    </ul>
+                    </div>
+                </div>
+            </ul>
+
+            <ul class="insights">
+                <div class="column">
+                    <img src="https://i.pinimg.com/originals/bb/48/ca/bb48ca56a3647bfb9c17393ba3f3c150.png" alt="Product 1">
+                    <div class="bottom-data">
+                        <ul>
+                        <h2>Yonko's iconic white shoes</h2><br>
+                        <p>ratings:</p><div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><br>
+                        <button class="icon-button">&#9825; Add Favorites</button>
+                        <a href="products.html"><button class="icon-button">&#128722; Add to Cart</button></a>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <img src="https://down-ph.img.susercontent.com/file/6ba2732c4d72d1e16bc8b136b538ac87" alt="Product 2">
+                    <div class="bottom-data">
+                        <ul>
+                        <h2>Yonko's black chain cap</h2><br>
+                        <p>ratings:</p><div class="rating">&#9733;&#9733;&#9733;&#9733;<span style="color: #ecf0f1;">&#9734;</span></div><br>
+                        <button class="icon-button">&#9825; Add Favorites</button>
+                        <a href="products.html"><button class="icon-button">&#128722; Add to Cart</button></a>
+                    </ul>
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <img src="https://images-static.nykaa.com/media/catalog/product/b/1/b130b7adr1022_1.jpg?tr=w-500,pr-true" alt="Product 3">
+                    <div class="bottom-data">
+                        <ul>
+                        <h2>Flower Dress</h2><br>
+                        <p>ratings:</p><div class="rating">&#9733;&#9733;&#9733;&#9733;<span style="color: #ecf0f1;">&#9734;</span></div><br>
+                        <button class="icon-button">&#9825; Add Favorites</button>
+                        <a href="products.html"><button class="icon-button">&#128722; Add to Cart</button></a>
+                    </ul>
+                    </div>
+                </div>
+            </ul>
+
+            <br><br><br>
+           <center><a href="products.html"><button class="icon-button1">See more!</button></a></center>
+           <br><br><br><br><br>
+
+           <div class="page">
+            <h3>Deals on Yonko’s Classic</h3>
+            <h1><font size="100%">ICONIC STYLES, FOR LESS</font></h1>
+            <h3>Level up your fits with iconic styles and get up to 50% off.</h3>
+           <br>
+            <a href="products.html" class="custom-button">Shop</a><br><br>
+        </div>
+
+        
+
+           <div class="container1">
+            <div id="slide">
+                <div class="item" style="background-image: url(https://img.freepik.com/free-photo/new-pair-white-sneakers-isolated-white_93675-130969.jpg);">
+                    <div class="content">
+                        <div class="name">Yonko White Slag Shoes</div>
+                        <div class="des">Elevate your footwear collection with the Yonko White Slag Shoes, a pinnacle of style and comfort. These meticulously crafted shoes seamlessly blend contemporary design with timeless elegance, making them a must-have for fashion enthusiasts.</div>
+                        <button href="#" class="button2">See more 🡺</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/running-shoes-white-background_10541-635.jpg);">
+                    <div class="content">
+                        <div class="name">Yonko Blackbeard Shoes</div>
+                        <div class="des">Unleash your inner style maven with the Yonko Blackbeard Shoes, an epitome of boldness and fashion-forward design. These shoes redefine footwear, blending edgy aesthetics with unparalleled comfort for a statement look that doesn't compromise on comfort.</div>
+                        <button href="#" class="button2">See more 🡺</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://jdsports.ca/cdn/shop/products/878068104_nike_air_presto_2_671x.jpg?v=1660391297);">
+                    <div class="content">
+                        <div class="name">Yonko Whitebeard Shoes</div>
+                        <div class="des">Elevate your footwear game with the Yonko Whitebeard Shoes, a testament to style, sophistication, and unmatched comfort. These shoes embody a timeless elegance, seamlessly blending classic design elements with modern sensibilities.</div>
+                        <button href="#" class="button2">See more 🡺</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://cdn.sanity.io/images/47jnag19/production/2f75fe5cbe3ecb9252a7859e41cad82734103e29-3000x3750.jpg);">
+                    <div class="content">
+                        <div class="name">Yonko Blackbeard 2nd Edition Shoes</div>
+                        <div class="des">Unleash the bold and fearless spirit of Blackbeard with the Yonko Blackbeard 2nd Edition Shoes. This limited-edition footwear pays homage to the iconic character, merging rugged style with contemporary flair for a look that's as powerful as it is distinctive.</div>
+                        <button href="#" class="button2">See more 🡺</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://t4.ftcdn.net/jpg/02/20/89/33/360_F_220893304_odo1CNP1cvVWbjktVCnEKIJ8CJWf1SNf.jpg);">
+                    <div class="content">
+                        <div class="name">Nami OP Heels</div>
+                        <div class="des">Indulge in the perfect blend of sophistication and wanderlust with the Nami OP Heels. Inspired by the fearless navigator of the high seas, Nami, these heels redefine footwear with a captivating fusion of style and adventure.</div>
+                        <button href="#" class="button2">See more 🡺</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://i.pinimg.com/564x/7d/29/6a/7d296abc37815f4140291476e175544f.jpg);">
+                    <div class="content">
+                        <div class="name">Robin OP Heels</div>
+                        <div class="des">Dive into the world of chic sophistication with the Robin OP Heels, a tribute to the enigmatic and stylish Nico Robin from the iconic One Piece series. These heels are more than just footwear; they are an embodiment of strength, intelligence, and unparalleled grace.</div>
+                        <button href="#" class="button2">See more 🡺</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div> 
+
+        <footer class="footer1">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="aboutus.html">Yonko's</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">New & Featured</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Customize</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Membership</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Download App</a></li>
+            </ul>
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                <a href="#">Yonko</a>.
+            </p>
+          </footer>
+            </div>
+
+        </main>
+        
+    </div>
+
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

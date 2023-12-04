@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+    <style>
+        /*Starting point of CSS in the BODY*/
+.intro {
+        text-align: center; 
+        padding-top: 4%;
+        padding-bottom: 4%;
+        
+    }
+
+    .intro img {
+        width: 100%; 
+        height: 300px; 
+        object-fit: cover;
+        max-width: 300%; 
+        display: block; 
+        margin: 0 auto; 
+        position: relative;
+    }
+
+    .intro-text{
+        position: absolute;
+        top: 140px;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 35px;
+        font-family:Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        opacity: 0.6;
+        letter-spacing: 20px;
+        padding-top: 120px;
+        padding-bottom: 75px;
+        padding-left: 150px;
+        padding-right: 150px;
+        width: 96%;
+    }
+
+    .intro-2{
+        background-color: #ccc;
+        padding-left: 180px;
+        padding-right: 180px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+        border: solid;
+    }
+
+    .text-1{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 5px;
+        color: #332f2f;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .text-2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        color: #000000;
+    }
+
+    .intro-3{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        background-color: rgb(71, 43, 43);
+        display:flex;
+    }
+
+    .text-3{
+       color: white;
+       padding-left: 30px;
+       width: 40%;
+       margin: 0 auto;
+    }
+
+    .text-3-1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .text-3-2{
+        font-style: oblique;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .pic1{
+        border-radius: 50px;
+        width: 85%;
+        margin-left: 100px;
+    }
+
+    .intro-4{
+        background-color: rgb(71, 43, 43);
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+    
+    .pic2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .picture-1{
+        height: 500px;
+        padding-left: 50px;
+    }
+
+    .picture-2{
+        height: 500px;
+        padding-left: 60px;
+        padding-right: 50px;
+    }
+
+    .picture-3{
+        height: 500px;
+        padding-left: 10px;
+    }
+
+    .intro-5{
+        text-align: center; 
+        padding-top: 4%;
+        padding-bottom: 4%;
+        color: white;
+        padding-right: 100px;
+        padding-left: 100px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        background-color: rgb(71, 43, 43);;
+    }
+
+    .footer1 {
+        margin-top: 6%;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo1">
+                <img src="logo.png">
+            <div class="logo-name"><span>Yon</span>ko</div>
+        </div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li><a href="newfeature.html"><i class='bx bxs-dashboard'></i>New & Featured</a></li>
+            <li><a href="products.html"><i class='bx bx-store-alt'></i>Products</a></li>
+            <li><a href="customize.html"><i class='bx bx-analyse'></i>Customize</a></li>
+            <li><a href="contactus.html"><i class='bx bx-message-square-dots'></i>Cotnact Us</a></li>
+            <li><a href="membership.html"><i class='bx bx-group'></i>Membership</a></li>
+            <li class="active"><a href="aboutus.html"><i class='bx bx-cog'></i>Yonko's</a></li><br>
+            <hr class="styled-hr"><br>
+                <div class="vertical-menu">
+                    <a href="#" class="active">Sales(100)</a>
+                    <li><a href="#">Shoes</a>
+                    <li><a href="#">Top and T-shirts</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Trousers & Tights</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sports  wear</a></li>
+                    <li><a href="#">Skirt & Dresses</a></li>
+                    <li><a href="#">Socks</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Gender</a>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Unisex</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Kid</a>
+                    <li><a href="#">boy</a></li>
+                    <li><a href="#">girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">New Released</a>
+                    <li><a href="#">Men & Boy</a></li>
+                    <li><a href="#">Women & Girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Shop By Price</a>
+                    <li><a href="#">Under ₱ 3,000</a></li>
+                    <li><a href="#">₱ 3,000 - ₱ 6,000</a></li>
+                    <li><a href="#">₱ 6,000 - ₱ 12,000</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Colour</a>
+                    <div class="circle-container">
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                    </div><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Sports</a>
+                    <li><a href="#">LifeStyle</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Basketball</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Best For</a>
+                    <li><a href="#">Wet Weather Condtion</a></li>
+                    <li><a href="#">Winter Wear</a></li><br>
+            </div>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="https://w7.pngwing.com/pngs/973/860/png-transparent-anonym-avatar-default-head-person-unknown-user-user-pictures-icon-thumbnail.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <!--Starting point of HTML for Body-->
+    <div class="intro">
+        <img src="https://d1hjkbq40fs2x4.cloudfront.net/2021-03-02/files/03_-_SURROUNDINGS.jpg">
+        <div class="intro-text">
+            <p>FASHION IS A GREAT SOURCE OF HAPPINESS</p>
+        </div>
+    </div>
+    <div class="intro-2">
+        <p class="text-1">YOU BECOME A PART OF SOMETHING BIGGER WHEN YOU JOIN US: </p>
+        <p class="text-2">a world community committed to bringing out the best of each individual
+            another is that by having access to the best tools for the job,
+            includes YONKO'S By You Member-only goods
+            customization and exclusive deals. All of it is free.</p>
+    </div>
+    <div class="intro-3">
+        <div class="text-3">
+            <p class = text-3-1>
+                Welcome to YONKO'S,
+            </p>
+            <p class = text-3-2>the Philippines' one-stop online shop for all things stylish. We highlight 
+                the most significant Filipino businesses in addition to your favorite 
+                foreign designers to bring you insights on both worldwide and local trends.
+            <br><br>To ensure that we only provide you with the most interesting styles for 
+                clothing, shoes, purses, watches, beauty, and all things fashion, we regularly 
+                refresh ourselves with the most recent current trends.
+            </p>
+        </div>
+        <div class="pic-1">
+            <img class="pic1"src="https://www.apetogentleman.com/wp-content/uploads/2018/06/male-models-luka.jpg">
+        </div>
+    </div>
+    <div class="intro-4">
+        <div class="pic2">
+            <img class="picture-1" src="https://media.istockphoto.com/id/1201026026/photo/stylish-man-wearing-sunglasses-and-white-shirt-city-life.jpg?s=612x612&w=0&k=20&c=Lw3M3Eq3Cwwc7OqR4z3xVqEQvRBrGvQXbUDY8jB7eOE=">
+            <img class="picture-2" src=" https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            <img class="picture-3" src="https://expertphotography.b-cdn.net/wp-content/uploads/2019/03/fashion-photography-types-Lookbook.jpg">
+        </div>
+    </div>
+    <div class="intro-5">
+        <p>At YONKO'S, we believe that shopping should be simple and enjoyable. To help you with 
+            any questions or problems, we have a fantastic staff of local customer support experts 
+            (based in our Manila office). </p>
+    </div>
+    <!--End point of HTML for Body-->
+    <footer class="footer1">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="aboutus.html">Yonko's</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">New & Featured</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Customize</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Membership</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Download App</a></li>
+        </ul>
+        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+            <a href="#">Yonko</a>.
+        </p>
+      </footer>
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

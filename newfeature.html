@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+<style>
+     .feature-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .feature-item {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      margin: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .feature-item:hover {
+      transform: scale(1.1);
+    }
+
+    .feature-item::after {
+      content: '\2022';
+      font-size: 48px;
+      color: #2ecc71;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .feature-item:hover::after {
+      opacity: 1;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo1">
+                <img src="logo.png">
+            <div class="logo-name"><span>Yon</span>ko</div>
+        </div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li class="active"><a href="newfeature.html"><i class='bx bxs-dashboard'></i>New & Featured</a></li>
+            <li><a href="products.html"><i class='bx bx-store-alt'></i>Products</a></li>
+            <li><a href="customize.html"><i class='bx bx-analyse'></i>Customize</a></li>
+            <li><a href="contactus.html"><i class='bx bx-message-square-dots'></i>Contact Us</a></li>
+            <li><a href="membership.html"><i class='bx bx-group'></i>Membership</a></li>
+            <li><a href="aboutus.html"><i class='bx bx-cog'></i>Yonko's</a></li><br>
+            <hr class="styled-hr"><br>
+                <div class="vertical-menu">
+                    <a href="#" class="active">Sales(100)</a>
+                    <li><a href="#">Shoes</a>
+                    <li><a href="#">Top and T-shirts</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Trousers & Tights</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sports  wear</a></li>
+                    <li><a href="#">Skirt & Dresses</a></li>
+                    <li><a href="#">Socks</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Gender</a>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Unisex</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Kid</a>
+                    <li><a href="#">boy</a></li>
+                    <li><a href="#">girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">New Released</a>
+                    <li><a href="#">Men & Boy</a></li>
+                    <li><a href="#">Women & Girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Shop By Price</a>
+                    <li><a href="#">Under ₱ 3,000</a></li>
+                    <li><a href="#">₱ 3,000 - ₱ 6,000</a></li>
+                    <li><a href="#">₱ 6,000 - ₱ 12,000</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Colour</a>
+                    <div class="circle-container">
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                    </div><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Sports</a>
+                    <li><a href="#">LifeStyle</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Basketball</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Best For</a>
+                    <li><a href="#">Wet Weather Condtion</a></li>
+                    <li><a href="#">Winter Wear</a></li><br>
+            </div>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/logo.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="bottom-data">
+            <div class="feature-container">
+                <h2>New & Featured Items</h2>
+              
+                <div class="feature-item">SHIRT</div>
+                <div class="feature-item">DRESS</div>
+                <div class="feature-item">PANTS</div>
+                <div class="feature-item">HATS</div>
+                <div class="feature-item">SWEATER</div>
+                <div class="feature-item">T-SHIRT</div>
+                <div class="feature-item">ACCESORIES</div>
+           
+                <!-- Add more feature items as needed -->
+              
+              </div>
+            </div>
+              
+              <footer class="footer2">
+                <div class="waves">
+                  <div class="wave" id="wave1"></div>
+                  <div class="wave" id="wave2"></div>
+                  <div class="wave" id="wave3"></div>
+                  <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icon">
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="aboutus.html">Yonko's</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">New & Featured</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Customize</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Membership</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Download App</a></li>
+                </ul>
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                    <a href="#">Yonko</a>.
+                </p>
+              </footer>
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

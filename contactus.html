@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+<style>
+    .contact-container {
+      display: block;
+      position: relative;
+      background-image: url('https://cdn105.picsart.com/203422944001202.gif');
+      border-radius: 35px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      height: 550px;
+      width: 600px;
+      justify-content: center;
+      background-size: cover;
+  background-position: center;
+  margin: auto; /* Center horizontally */
+
+  font-family: 'Arial', sans-serif;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: white;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: transparent;
+      color: red;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: 2px solid red;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: red;
+      color: white;
+    }
+
+    #map {
+        height: 500px;
+        width: 35%;
+        border: 4px solid grey;
+        border-radius: 50%;
+        margin-top: 3%;
+      }
+</style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo1">
+                <img src="logo.png">
+            <div class="logo-name"><span>Yon</span>ko</div>
+        </div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li><a href="newfeature.html"><i class='bx bxs-dashboard'></i>New & Featured</a></li>
+            <li><a href="products.html"><i class='bx bx-store-alt'></i>Products</a></li>
+            <li ><a href="customize.html"><i class='bx bx-analyse'></i>Customize</a></li>
+            <li class="active"><a href="contactus.html"><i class='bx bx-message-square-dots'></i>Contact Us</a></li>
+            <li><a href="membership.html"><i class='bx bx-group'></i>Membership</a></li>
+            <li><a href="aboutus.html"><i class='bx bx-cog'></i>Yonko's</a></li><br>
+            <hr class="styled-hr"><br>
+                <div class="vertical-menu">
+                    <a href="#" class="active">Sales(100)</a>
+                    <li><a href="#">Shoes</a>
+                    <li><a href="#">Top and T-shirts</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Trousers & Tights</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sports  wear</a></li>
+                    <li><a href="#">Skirt & Dresses</a></li>
+                    <li><a href="#">Socks</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Gender</a>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Unisex</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Kid</a>
+                    <li><a href="#">boy</a></li>
+                    <li><a href="#">girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">New Released</a>
+                    <li><a href="#">Men & Boy</a></li>
+                    <li><a href="#">Women & Girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Shop By Price</a>
+                    <li><a href="#">Under ₱ 3,000</a></li>
+                    <li><a href="#">₱ 3,000 - ₱ 6,000</a></li>
+                    <li><a href="#">₱ 6,000 - ₱ 12,000</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Colour</a>
+                    <div class="circle-container">
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                    </div><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Sports</a>
+                    <li><a href="#">LifeStyle</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Basketball</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Best For</a>
+                    <li><a href="#">Wet Weather Condtion</a></li>
+                    <li><a href="#">Winter Wear</a></li><br>
+            </div>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="https://w7.pngwing.com/pngs/973/860/png-transparent-anonym-avatar-default-head-person-unknown-user-user-pictures-icon-thumbnail.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <form id="contact-form">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required placeholder="👤 | Enter your name">
+              
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required placeholder="📧 | Enter your email">
+              
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" rows="4" required placeholder="Text here..."></textarea>
+              
+                  <button type="button" onclick="submitForm()">Send Message</button>
+                </form>
+                </div>
+
+                <center><div id="map" style="height: 500px"></div></center>
+                
+                <footer class="footer2">
+                    <div class="waves">
+                      <div class="wave" id="wave1"></div>
+                      <div class="wave" id="wave2"></div>
+                      <div class="wave" id="wave3"></div>
+                      <div class="wave" id="wave4"></div>
+                    </div>
+                    <ul class="social-icon">
+                      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                      <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                    </ul>
+                    <ul class="menu">
+                      <li class="menu__item"><a class="menu__link" href="aboutus.html">Yonko's</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">New & Featured</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Customize</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Membership</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Download App</a></li>
+                    </ul>
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                        <a href="#">Yonko</a>.
+                    </p>
+                  </footer>
+
+        </main>
+
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+    <script>
+              //------------------GEOLOCATION----------------------
+
+(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+      alert("Geolocation is not supported by this browser");
+    }    
+  })();
+  
+  function success(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    getMap(latitude, longitude);
+  }
+  function error() {
+    alert("Unable to retrieve location");
+  }
+  
+  function getMap(latitude, longitude) {
+    const map = L.map("map").setView([latitude, longitude], 5);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+    L.marker([latitude, longitude]).addTo(map);
+  }
+    </script>
+</body>
+
+</html>

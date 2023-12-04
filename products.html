@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+    <!-- Bootstrap 5 CSS -->
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>  
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo1">
+                <img src="logo.png">
+            <div class="logo-name"><span>Yon</span>ko</div>
+        </div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li><a href="newfeature.html"><i class='bx bxs-dashboard'></i>New & Featured</a></li>
+            <li class="active"><a href="products.html"><i class='bx bx-store-alt'></i>Products</a></li>
+            <li><a class="cart" href="javascript:void(0);" title="Your Cart"><i class='bx bx-cart'></i>Cart<span id="count-item" data-count="0">0 item</span></a></li>
+            <li><a href="customize.html"><i class='bx bx-analyse'></i>Customize</a></li>
+            <li><a href="contactus.html"><i class='bx bx-message-square-dots'></i>Contact Us</a></li>
+            <li><a href="membership.html"><i class='bx bx-group'></i>Membership</a></li>
+            <li><a href="aboutus.html"><i class='bx bx-cog'></i>Yonko's</a></li><br>
+            <hr class="styled-hr"><br>
+                <div class="vertical-menu">
+                    <a href="#" class="active">Sales(100)</a>
+                    <li><a href="#">Shoes</a>
+                    <li><a href="#">Top and T-shirts</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Trousers & Tights</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sports  wear</a></li>
+                    <li><a href="#">Skirt & Dresses</a></li>
+                    <li><a href="#">Socks</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Gender</a>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Unisex</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Kid</a>
+                    <li><a href="#">boy</a></li>
+                    <li><a href="#">girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">New Released</a>
+                    <li><a href="#">Men & Boy</a></li>
+                    <li><a href="#">Women & Girl</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Shop By Price</a>
+                    <li><a href="#">Under ₱ 3,000</a></li>
+                    <li><a href="#">₱ 3,000 - ₱ 6,000</a></li>
+                    <li><a href="#">₱ 6,000 - ₱ 12,000</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Colour</a>
+                    <div class="circle-container">
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                        <a href="#" class="circle"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                        <a href="#" class="circle1"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                        <a href="#" class="circle2"></a>
+                    </div>
+                    <div class="circle-container">
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                        <a href="#" class="circle3"></a>
+                    </div><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Sports</a>
+                    <li><a href="#">LifeStyle</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Training & Gym</a></li>
+                    <li><a href="#">Basketball</a></li><br>
+                    <hr class="styled-hr"><br>
+                    <a href="#" class="active">Best For</a>
+                    <li><a href="#">Wet Weather Condtion</a></li>
+                    <li><a href="#">Winter Wear</a></li><br>
+            </div>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+       <!-- Navbar -->
+<nav>
+    <i class='bx bx-menu'></i>
+    <form action="#">
+        <div class="form-input">
+            <input type="search" placeholder="Search...">
+            <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+        </div>
+    </form>
+    <input type="checkbox" id="theme-toggle" hidden>
+    <label for="theme-toggle" class="theme-toggle"></label>
+    <a href="#" class="notif">
+        <i class='bx bx-bell'></i>
+        <span class="count">12</span>
+    </a>
+    <a href="#" class="profile">
+        <img src="https://w7.pngwing.com/pngs/973/860/png-transparent-anonym-avatar-default-head-person-unknown-user-user-pictures-icon-thumbnail.png">
+    </a>
+</nav>
+<!-- End of Navbar -->
+
+
+        <main>
+            <div class="container">
+
+                <video autoplay loop muted plays-inline class="background-clip">
+                    <source src="intro.mp4" type="video/mp4">
+                </video>
+        
+                <div class="content1">
+                    <h2><bold>WINTER SALE!!!</bold></h2>
+                    <h1>NEW COLLECTION ARRIVED</h1>
+                    <a href="#">SHOP NOW!</a>
+                </div>
+            </div>
+            <div class="container5">
+                <div>
+                  <div class="content5">
+                    <h2>Kids</h2>
+                    <span>Attire for Kids</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="content5">
+                    <h2>Teen</h2>
+                    <span>Attire for Teen</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="content5">
+                    <h2>Adults</h2>
+                    <span>Attire for Adults</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="content5">
+                    <h2>Accessories</h2>
+                    <span>Collection of Accessories</span>
+                  </div>
+                </div>
+              </div>
+              <br><br><br><br>
+            <h2>Category:</h2>
+            <div class="image-container">
+                <a href="https://example.com" target="_blank" class="image-link">
+                    <img src="https://ae01.alicdn.com/kf/HLB1vLG.bjzuK1RjSspeq6ziHVXa7/Summer-New-Style-Painted-Fashion-Cool-Bucket-Hat-Korean-Style-Japanese-Style-Couple-s-Hat-Travel.jpg" alt="Image 1">
+                    <div class="image-text">HATS</div>
+                </a>
+                <a href="https://example.com" target="_blank" class="image-link">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/u/e/0/l-sando-black-msdian-original-imagzjfwycmessf9.jpeg?q=90" alt="Image 2">
+                    <div class="image-text">SHIRT</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://my-live-02.slatic.net/p/af253cf4f2bd711f9ae2d85e1d190f43.jpg" alt="Image 3">
+                    <div class="image-text">POLO</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://i.ebayimg.com/images/g/1DEAAOSwouliD1dj/s-l1600.jpg" alt="Image 3">
+                    <div class="image-text">DRESS</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://www.thekoreanfashion.com/cdn/shop/products/Black-Cropped-Slim-Fit-Pants-The-Korean-Fashion_400x.jpg?v=1678521560" alt="Image 3">
+                    <div class="image-text">PANTS</div>
+                </a>
+            </div>
+            <br>
+            <div class="image-container">
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://www.nepal.ubuy.com/productimg/?image=aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvSFRCMXZralFhdjZUQktOalNaSmlxNnpLVkZYYTAvV29tZW4ta29yZWFuLWZhc2hpb24tb3ZlcnNpemVkLWxvbmctc2xlZXZlLXQtc2hpcnQtaGlwLWhvcC1wdW5rLXN0cmVldHdlYXItZ2lybHMtZmFrZS10d28tcGllY2VzLmpwZw.jpg" alt="Image 1">
+                    <div class="image-text">LONGSLEVES</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://assets-prd.ignimgs.com/2021/08/19/crl-9x16-jjk-1629387145537.jpg" alt="Image 2">
+                    <div class="image-text">EXCLUSIVE / LIMITED EDITION</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://uquid.net/01/kf/S11d981932b7949e09f9948d9c82880a9f/2023-Autumn-New-Boys-Sweatshirt-Cotton-Kids-Clothing-Long-Sleeve-Korean-Casual-Style-Pullover-Tops-5.jpg_640x640.jpg?hs=02e74f" alt="Image 3">
+                    <div class="image-text">SWEATER</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://my-live-01.slatic.net/p/3803f1260573c3cd5e3e7bb54ee4d0c0.jpg" alt="Image 3">
+                    <div class="image-text">T-SHIRT</div>
+                </a>
+                <a href="#" target="_blank" class="image-link">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/BL/OY/JX/79180328/blank-page-500x500.jpeg" alt="Image 3">
+                    <div class="image-text">SHOES</div>
+                </a>
+            </div>
+            <br><br><br>
+
+            <h2>All:</h2><br>
+            <figure class="snip">                <!-- first -->
+                <h4>Yonko's green drip</h4>
+                <div class="image">
+                  <img class="slide1" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9T5mycVRkGn404y3m6ijDZiI5oddxfVkIR2eip2MMloqUpw8W"  />
+                  <img class="slide1" src="https://i.pinimg.com/564x/a2/8b/c4/a28bc44f2f9c896c4698c3dadc03d867.jpg"  style="display:none;" />
+                  <img class="slide1" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0Qnj0ZdMnzmeSlKmVWftKB3b3mtQfQ8AXK_RrqAIuVlDy7XDl" height="100%" width="100%" style="display:none;" />
+                </div>
+                <button class="prev" onclick="plusDivs(-1)">&#10094;&#10094;</button>
+                <button class="next" onclick="plusDivs(1)">&#10095;&#10095;</button>
+                <figcaption>
+                  <p>Yonko's Green Drip Kid Size is a vibrant and stylish clothing option for young fashion enthusiasts.</p>    
+                  <div class="price">
+                    <s>₱ 640.00</s><div class="real" data-price="420.00">₱ 420.00</div>
+                  </div>
+                </figcaption>
+                <a class="add-to-cart" href="#">Add to Cart</a>
+              </figure>
+              
+              <figure class="snip">                <!-- second -->
+                <h4>Yonko's Cool Black Sweater</h4>
+                <div class="image">
+                  <img class="slide2" src="https://www.bing.com/images/blob?bcid=S84xLUxprmIGvLhj2Z30-M5iW3EU.....9c" />
+                  <img class="slide2" src="https://th.bing.com/th/id/OIP.6axOf9PVQEhWpM7-drCyrAHaHa?pid=ImgDet&w=161&h=161&c=7"  style="display:none;" />
+                  <img class="slide2" src="https://th.bing.com/th/id/OIP.CHXIxDP5XPBb9jHCFvFghwHaHa?pid=ImgDet&w=161&h=161&c=7"  style="display:none;" />
+                  <img class="slide2" src="https://th.bing.com/th/id/OIP.xdnTgILKwg04oJ3fNiaLfgHaHa?pid=ImgDet&w=161&h=161&c=7"  style="display:none;" />
+                </div>
+                <button class="prev" onclick="plusDivs2(-1)">&#10094;&#10094;</button>
+                <button class="next" onclick="plusDivs2(1)">&#10095;&#10095;</button>
+                <figcaption>
+                  <p>Brown animal print woven top, has a round neck, three-quarter sleeves</p>    
+                  <div class="price">
+                    <s>₱ 450.00</s><div class="real" data-price="210.00">₱ 210.00</div>
+                  </div>
+                </figcaption>
+                <a class="add-to-cart" href="#">Add to Cart</a>
+              </figure>
+              
+              <figure class="snip">               <!-- third -->
+                <h4>Autumn Winter Faux Fur Coat Jackets</h4>
+                <div class="image1">
+                  <img class="slide3" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFU3mEVHBsIptH31VQmpIpzKhwsY2uXqSEZ-4PRGESMozxWHda" style="display:none;" />
+                  <img class="slide3" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC6q_zzIssbLsrv0Z-c0eqVXeFmuODY4Lm7qOV0DJFX6uzMmwq" style="display:none;" />
+                  <img class="slide3" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTire3_A1YIj1sv7E0v3aY7VsngvJTVVXx1Vb7TzyeI2TKmz403" style="display:none;" />
+                </div>
+                <button class="prev" onclick="myslide.previous()">&#10094;&#10094;</button>
+                <button class="next" onclick="myslide.next()">&#10095;&#10095;</button>
+                <figcaption>
+                  <p>Pack of two black push-up bras, each has underwired, extra-padded with seamless cups, adjustable and detachable multiway shoulder straps, double rows of hook-and-eye closures on the back</p>    
+                  <div class="price">
+                    <s>₱ 1,550.00</s><div class="real" data-price="819.55">₱ 819.55</div>
+                  </div>
+                </figcaption>
+                <a class="add-to-cart" href="#">Add to Cart</a>
+              </figure>
+              
+              <figure class="snip">               <!-- Fourth -->
+                <h4>Yonko's iconic white shoes</h4>
+                <div class="image">
+ 
+                  <img class="slide4" src="https://t2.gstatic.com/images?q=tbn:ANd9GcQ284Z5usCUVg0_mPEhu_aXYC4u48nxRi-4TJZhYsovqLEk1it1" height="100%" width="100%" style="display:none;" />
+
+                </div>
+                <button class="prev" onclick="plusDivs3(-1)">&#10094;&#10094;</button>
+                <button class="next" onclick="plusDivs3(1)">&#10095;&#10095;</button>
+                <figcaption>
+                  <p>Navy blue and white striped Bardot top, has short sleeves and shoulder straps</p>    
+                  <div class="price">
+                    <s>₱2,220.00</s><div class="real" data-price="1245.00">₱ 1,245.00</div>
+                  </div>
+                </figcaption>
+                <a class="add-to-cart" href="#">Add to Cart</a>
+              </figure>
+
+              <figure class="snip">               <!-- Fifth -->
+                <h4>Yonko's black chain cap</h4>
+                <div class="image">
+                  <img class="slide5" src="https://down-ph.img.susercontent.com/file/6ba2732c4d72d1e16bc8b136b538ac87" />
+                </div>
+                <button class="prev" onclick="plusDivs4(-1)">&#10094;&#10094;</button>
+                <button class="next" onclick="plusDivs4(1)">&#10095;&#10095;</button>
+                <figcaption>
+                  <p>Navy blue and white striped Bardot top, has short sleeves and shoulder straps</p>    
+                  <div class="price">
+                    <s>₱ 55.00</s><div class="real" data-price="185.00">₱ 185.00</div>
+                  </div>
+                </figcaption>
+                <a class="add-to-cart" href="#">Add to Cart</a>
+              </figure>
+
+              <figure class="snip">               <!-- sixth -->
+                <h4>Flower Dress</h4>
+                <div class="image">
+                  <img class="slide6" src="https://images-static.nykaa.com/media/catalog/product/b/1/b130b7adr1022_1.jpg?tr=w-500,pr-true" />
+                </div>
+                <button class="prev" onclick="plusDivs5(-1)">&#10094;&#10094;</button>
+                <button class="next" onclick="plusDivs5(1)">&#10095;&#10095;</button>
+                <figcaption>
+                  <p>Navy blue and white striped Bardot top, has short sleeves and shoulder straps</p>    
+                  <div class="price">
+                    <s>₱ 800.00</s><div class="real" data-price="520.00">₱ 520.00</div>
+                  </div>
+                </figcaption>
+                <a class="add-to-cart" href="#">Add to Cart</a>
+              </figure>
+
+              
+              <!-- --------------------Check out ---------------- -->
+              <div class="checkout-container">
+                <div class="table">
+                <span class="empty">Your cart is empty!</span>
+            
+                <div class="col1-name"></div>
+                <div class="col2-price"></div>
+                </div>
+                <div class="bin"><span>Clear All</span><img id="bin" src="./img/delete.png" style="width:40px" /></div>
+                <div class="total">
+                  <div class="total-text">Total :</div>
+                  <div class="total-amount">₱ 0</div>
+                </div>
+                <div class="checkout" onclick="document.getElementById('id01').style.display='block'">Check out</div>
+                
+              </div>
+              
+                      <!-- -----------------Bill------------- -->
+             <div id="id01" class="modal">
+              <div class="wrapper">
+                <div class="bill-content">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+                <h1 class="box-title">Checkout</h1>
+                <div class="price-total">
+                  <span>PAY</span>
+                  <div class="pay-last">₱ 0</div>
+                </div>
+                <form>
+                  
+                  <div class="form-text">
+                    <label>Card Number</label>
+                    <input name="card-number" type="text" required>
+                  </div>
+                  <div class="form-text">
+                    <label>Card Verification Value</label>
+                    <input name="name" type="text" placeholder="CVV" required>
+                  </div>
+                  <div class="form-text" id="col01">
+                    <label>Expiry Date</label>
+                    <input name="card-number" type="text" placeholder="MM/YY" maxlength="3" required>
+                  </div>
+                  <div class="form-text"  id="col02">
+                    <label>Coupon Code</label>
+                    <input name="card-number" type="text">
+                  </div>
+                  
+                  <button id="end">PAY NOW</button>
+                </form>
+                  <button id="coupon">Get coupon code</button>
+                  
+                </div>
+                
+              </div>
+              
+             </div> 
+
+             <footer class="footer">
+              <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+              </div>
+              <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              </ul>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="aboutus.html">Yonko's</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">New & Featured</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Customize</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Membership</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Download App</a></li>
+              </ul>
+              <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                  <a href="#">Yonko</a>.
+              </p>
+            </footer>
+            </div>
+        </main>
+
+    <script src="index.js"></script>
+    <script  src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
